@@ -131,6 +131,11 @@
       .points li::marker{color:var(--gold)}
       .practice{background:var(--practice-bg);border:1px dashed var(--line2);border-radius:12px;padding:16px 20px 18px;margin-top:14px}
       .practice p{margin:0;font-size:14.5px !important;line-height:1.95;color:var(--ink)}
+      .refs{margin-top:20px;padding-top:14px;border-top:1px solid var(--line)}
+      .refs h4{font-size:11px;letter-spacing:.18em;color:var(--muted);margin:0 0 8px;font-weight:700}
+      .refs ul{margin:0;padding-left:18px}
+      .refs li{font-size:12px !important;line-height:1.85;color:var(--muted);margin-top:3px}
+      .refs a{color:var(--gold);text-decoration:underline;text-underline-offset:2px;overflow-wrap:anywhere}
       .done-btn{margin-top:20px;border:1.5px solid var(--gold);background:transparent;color:var(--gold);border-radius:999px;padding:10px 22px;font-size:13.5px;font-weight:700;min-height:42px}
       .done-btn.done{background:var(--gold);color:#fff}
       @media (prefers-color-scheme: dark){.done-btn.done{color:#1d180e}}
@@ -184,7 +189,7 @@
             <button class="chip" data-filter="fav">★ お気に入り</button>
           </div>
           <div class="read-meter">
-            <p><span>読み終えた編</span><b><span id="doneCount">0</span> / 15</b></p>
+            <p><span>読み終えた編</span><b><span id="doneCount">0</span> / 16</b></p>
             <div class="meter-track"><div class="meter-fill" id="meterFill"></div></div>
           </div>
           <nav aria-label="法則の目次">
@@ -196,6 +201,7 @@
                 <a class="nav-item" href="#p03" data-target="p03" data-cat="brain"><span class="nav-num">03</span><span class="nav-title">ドーパミンとやる気</span><span class="nav-star">★</span><span class="nav-check">✓</span></a>
                 <a class="nav-item" href="#p04" data-target="p04" data-cat="brain"><span class="nav-num">04</span><span class="nav-title">前頭前野と集中</span><span class="nav-star">★</span><span class="nav-check">✓</span></a>
                 <a class="nav-item" href="#p05" data-target="p05" data-cat="brain"><span class="nav-num">05</span><span class="nav-title">睡眠と記憶の定着</span><span class="nav-star">★</span><span class="nav-check">✓</span></a>
+                <a class="nav-item" href="#p16" data-target="p16" data-cat="brain"><span class="nav-num">16</span><span class="nav-title">運動と脳</span><span class="nav-star">★</span><span class="nav-check">✓</span></a>
               </div>
             </div>
             <div class="nav-group">
@@ -238,9 +244,9 @@
           <div class="hero-body">
             <p class="hero-eyebrow">BRAIN SCIENCE × PRINCIPLES OF SUCCESS</p>
             <h2>成果は、才能ではなく<br />脳の使い方と仕組みから生まれます</h2>
-            <p class="lead">成功している人の歩みをたどると、そこには偶然ではない共通点があります。脳が情報を選び、行動を生み、習慣として定着していく仕組みを知ること。その仕組みに沿って日々を設計すること。この法則集は、その二つを15の編に分けて読み解く読み物です。</p>
+            <p class="lead">成功している人の歩みをたどると、そこには偶然ではない共通点があります。脳が情報を選び、行動を生み、習慣として定着していく仕組みを知ること。その仕組みに沿って日々を設計すること。この法則集は、その二つを16の編に分けて読み解く読み物です。</p>
             <div class="hero-stats">
-              <span>全 <b>15</b> 編</span>
+              <span>全 <b>16</b> 編</span>
               <span>3つの部立て</span>
               <span>1編 約 <b>3分</b></span>
               <span>各編に「今日の実践」付き</span>
@@ -503,6 +509,29 @@
             <li>目標を人に伝えること、学びを教えることが、継続と定着を支えます</li>
           </ul></div>
           <div class="practice"><h4>今日の実践</h4><p>今夜、ありがたかったことを1つ書き留めてください。相手がいることなら、明日、言葉にして伝えることも実践の一つです。</p></div>
+          <button class="done-btn">読み終えた</button>
+        </article>
+
+        <article class="post" id="p16" data-cat="brain">
+          <div class="post-head"><span class="post-num">16</span><span class="post-cat">脳科学の基礎</span><span class="post-min">約4分</span>
+            <span class="post-actions"><button class="icon-btn fav-btn" aria-label="お気に入りに追加" title="お気に入り">☆</button></span></div>
+          <h3>運動と脳 ― BDNFが学びと記憶を支えます</h3>
+          <p class="lead">学ぶ力を高める方法は、机の前だけで完結しません。体を動かすことが、記憶と学習を担う脳の働きを支えることは、研究で繰り返し示されています。その中心にあるのが、BDNF（脳由来神経栄養因子）というタンパク質です。</p>
+          <p>BDNFは、神経細胞の生存と成長を支えるタンパク質です。細胞同士のつながり（シナプス）が新しく作られ、強まっていく働きを助け、学びや記憶の土台である神経可塑性に深く関わります。とりわけ深く関わるのが、記憶を担う海馬と、判断や集中を担う前頭前野です。研究者の間では、BDNFは脳を育てる働きを持つ物質として説明されることがあります。</p>
+          <p>有酸素運動を行うと、筋肉や全身からアイリシン、乳酸、IGF-1などの信号が働き、海馬でBDNFの産生が高まる流れが報告されています。あわせて脳への血流が増え、新しい神経細胞が生まれる働きや、つながりの形成が支えられると考えられています。大切なのは、これは一度きりの効果の話ではなく、続けることで学びの土台そのものが変わっていく点です。</p>
+          <p>ピッツバーグ大学のEricksonらが2011年に発表した無作為化試験では、運動習慣の少なかった高齢者120人を、歩行を行う群とストレッチを行う群に分け、1年間続けました。歩行群は週3回、40分を目安に歩き、海馬の前部が約2％大きくなりました。一方のストレッチ群では、約1.4％の縮小が見られました。海馬の変化は血中のBDNFの上昇と関連し、空間記憶の成績とも関連が示されました。年齢とともに縮小しやすい海馬が、歩く習慣で逆の方向へ動いた。この点が、この研究が長く引用される理由です。</p>
+          <p>もちろん、運動がすべての人の記憶を同じだけ高めると断定はできません。対象や運動の種類、続けた期間によって結果は変わります。それでも、有酸素運動がBDNFと海馬に関わるという流れは、複数のレビューとメタ分析でも一貫して報告されています。激しい運動でなくても、歩行のような続けやすい運動から始める意味があります。</p>
+          <div class="points"><h4>この編の要点</h4><ul>
+            <li>BDNFは神経細胞の成長とつながりを支え、学びと記憶の土台に関わります</li>
+            <li>有酸素運動はBDNFの産生を高め、海馬の働きを支えると報告されています</li>
+            <li>Ericksonら（2011）の試験では、週3回の歩行を1年続けた群で海馬が約2％大きくなりました</li>
+            <li>大切なのは強さよりも、続けられる運動を習慣にすることです</li>
+          </ul></div>
+          <div class="practice"><h4>今日の実践</h4><p>学びの前後に、20〜30分歩いてみてください。講座を聴く前、読書の後、考えをまとめたい時が目安です。歩きながら、今日学んだことを3つだけ声に出して振り返ると、運動と復習が一つの流れになります。まずは週3回から始め、できた日を記録に残してください。</p></div>
+          <div class="refs"><h4>参考</h4><ul>
+            <li>PubMed／Journal of Molecular Neuroscience：Razazpour et al.「<a href="https://pubmed.ncbi.nlm.nih.gov/42616196/" target="_blank" rel="noopener">Voluntary Exercise and Hippocampal Memory Enhancement: Decoding the Molecular Blueprint</a>」</li>
+            <li>YouTube／Pacific Neuroscience Institute「<a href="https://youtu.be/7wJC91yaEKQ?si=C8fnKHts2rkHPY2V" target="_blank" rel="noopener">Think Neuro Podcast Ep.49: Exercise is Fertilizer for the Brain ― Dr. David Merrill</a>」</li>
+          </ul></div>
           <button class="done-btn">読み終えた</button>
         </article>
 
