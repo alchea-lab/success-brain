@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>習慣化スターターシート ― 成功脳の法則</title>
+<meta name="description" content="習慣が自動になるまでの目安は66日。場面と小さな行動を決めて、できた日にチェックする実践シートです。">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf7; --surface2:#f1e9d7;
+  --ink:#2d2820; --ink2:#57503f; --muted:#7d7360;
+  --gold:#a37f35; --gold-bright:#c19a4b; --gold-soft:#e8d9b8;
+  --line:#e0d4ba; --line2:#d3c39e;
+  --shadow:0 10px 30px rgba(120,95,40,.10);
+  --serif:"Shippori Mincho B1","Hiragino Mincho ProN",serif;
+  --sans:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#16130e; --surface:#201b13; --surface2:#292219;
+    --ink:#ede4cf; --ink2:#cfc3a6; --muted:#a99c7e;
+    --gold:#d3ab60; --gold-bright:#e3c07c; --gold-soft:#4a3d22;
+    --line:#3b3323; --line2:#57492c;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:4px}
+.wrap{max-width:880px;margin:0 auto;padding:28px 18px 48px}
+.backlink{font-size:13px;color:var(--gold);text-decoration:none;font-weight:700}
+.backlink:hover{text-decoration:underline}
+.sheet{background:var(--surface);border:1px solid var(--gold);box-shadow:var(--shadow);padding:34px 30px 30px;margin-top:16px;position:relative}
+.sheet::after{content:"";position:absolute;inset:5px;border:1px solid var(--gold-soft);pointer-events:none}
+.series{text-align:center;font-family:var(--serif);font-size:12px;letter-spacing:.28em;color:var(--gold);margin:0 0 10px}
+h1{text-align:center;font-family:var(--serif);font-size:30px;line-height:1.3;font-weight:700;margin:0}
+.subtitle{text-align:center;font-family:var(--serif);font-size:16px;color:var(--gold);margin:8px 0 0}
+.rule{width:64px;height:2px;background:var(--gold);margin:16px auto 18px}
+.lead{text-align:center;font-size:14.5px;line-height:1.9;color:var(--ink2);margin:0 0 24px}
+.box{background:var(--surface);border:1px solid var(--gold);padding:18px 20px 14px;margin-bottom:26px}
+.box h2,.sec h2{font-family:var(--serif);font-size:17px;color:var(--gold);margin:0 0 10px;letter-spacing:.06em}
+.box p{font-size:14px;line-height:1.8;margin:0 0 8px}
+.box p:last-child{margin-bottom:4px}
+.big66{font-family:var(--serif);font-size:26px;font-weight:700;color:var(--gold)}
+.sec{margin-bottom:26px}
+.step{display:flex;gap:14px;background:var(--surface);border:1px solid var(--line);padding:14px 16px;margin-bottom:10px;align-items:flex-start}
+.num{flex:0 0 34px;width:34px;height:34px;border-radius:50%;background:var(--gold);color:#fff;font-family:var(--serif);font-size:17px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:2px}
+@media (prefers-color-scheme: dark){.num{color:#1d180e}}
+.stepbody{flex:1;min-width:0}
+.step h3{font-family:var(--serif);font-size:16px;margin:0 0 4px}
+.step h3 span{font-size:12px;font-weight:400;color:var(--muted);margin-left:8px;font-family:var(--sans)}
+.step p{font-size:13px;line-height:1.6;color:var(--ink2);margin:0 0 8px}
+.step input[type="text"]{width:100%;padding:10px 12px;border:1px solid var(--line2);border-radius:8px;background:var(--bg);color:var(--ink);font-size:15px;font-family:var(--sans);min-height:44px}
+.step input[type="text"]::placeholder{color:var(--muted)}
+.tracker-head{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:flex-end;justify-content:space-between;margin-bottom:6px}
+.startctl{font-size:13px;color:var(--ink2)}
+.startctl input[type="date"]{padding:8px 10px;border:1px solid var(--line2);border-radius:8px;background:var(--bg);color:var(--ink);font-size:14px;font-family:var(--sans);min-height:40px;margin-left:8px}
+.summary{font-size:14.5px;line-height:1.8;margin:10px 0 4px}
+.summary .now{font-family:var(--serif);font-size:20px;font-weight:700;color:var(--gold)}
+.bar{height:10px;background:var(--surface2);border:1px solid var(--line);border-radius:999px;overflow:hidden;margin:10px 0 16px}
+.bar > div{height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--gold-bright));transition:width .3s ease}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+.day{background:var(--surface);border:1px solid var(--line);padding:8px 2px 9px;text-align:center;font-family:var(--sans);cursor:pointer;border-radius:6px;min-height:76px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}
+.day .dlabel{font-family:var(--serif);font-size:12px;color:var(--gold);font-weight:700;line-height:1.3}
+.day .ddate{font-size:10.5px;color:var(--muted);margin:1px 0 6px}
+.day .mark{width:26px;height:26px;border-radius:50%;border:2px solid var(--gold);background:transparent;color:#fff;font-size:15px;font-weight:700;display:flex;align-items:center;justify-content:center;line-height:1}
+.day.done .mark{background:var(--gold);border-color:var(--gold)}
+.day.done{background:var(--surface2)}
+.day.today{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+.day.future{opacity:.45;cursor:default}
+.day:disabled{cursor:default}
+.note{font-size:12.5px;line-height:1.8;color:var(--muted);margin:14px 0 0}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.btn{border:1px solid var(--gold);background:var(--gold);color:#fff;border-radius:10px;padding:11px 18px;font-size:13.5px;font-weight:700;cursor:pointer;min-height:44px;font-family:var(--sans)}
+@media (prefers-color-scheme: dark){.btn{color:#1d180e}}
+.btn.sub{background:transparent;color:var(--gold)}
+.footer{margin-top:26px;padding-top:18px;border-top:1px solid var(--gold);text-align:center}
+.footer .brand{font-family:var(--serif);font-size:15px;letter-spacing:.12em}
+.footer .url{font-size:12.5px;color:var(--gold);margin-top:6px;line-height:1.7}
+.footer a{color:var(--gold)}
+@media (max-width:640px){
+  .sheet{padding:24px 16px 22px}
+  h1{font-size:24px}
+  .grid{gap:5px}
+  .day{min-height:64px;padding:6px 1px 7px}
+  .day .dlabel{font-size:10.5px}
+  .day .ddate{font-size:9.5px}
+  .day .mark{width:22px;height:22px;font-size:13px}
+}
+@media print{
+  body{background:#fff}
+  .wrap{padding:0;max-width:none}
+  .backlink,.actions,.startctl input{border:none}
+  .no-print{display:none !important}
+  .sheet{box-shadow:none;border-width:2px}
+  .day{break-inside:avoid}
+  *{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="backlink" href="../">← 成功脳の法則 トップへ戻る</a>
+  <div class="sheet">
+    <p class="series">成 功 脳 の 法 則 ― The Success Brain ―</p>
+    <h1>習慣化スターターシート</h1>
+    <p class="subtitle">意志ではなく、仕組みで続けます</p>
+    <div class="rule"></div>
+    <p class="lead">続かないのは、意志が弱いからではありません。<br>同じ場面で、小さな行動を繰り返す。その設計を、今日ここで決めます。</p>
+
+    <section class="box">
+      <h2>研究の要点 ― 66日が目安です</h2>
+      <p>習慣が自動になるまでの目安は <span class="big66">66日</span>（中央値）。早い人で18日、長い人では254日でした（Lally et al., 2010、ロンドン大学の研究）。</p>
+      <p>「21日で身につく」は、目安として短すぎます。日数には幅があるものとして、焦らず続ける設計にします。</p>
+      <p>途中で1回抜けても、形成の過程に大きな影響はありませんでした。抜けた翌日に、同じ場面へ戻ればよいのです。</p>
+    </section>
+
+    <section class="sec">
+      <h2>設計の3ステップ ― 入力して決めます</h2>
+      <div class="step"><div class="num">1</div><div class="stepbody">
+        <h3>同じ場面を決める<span>毎日くり返す場面に結びつけます</span></h3>
+        <p>例：起き抜け ／ 歯みがきのあと ／ 玄関を出る前</p>
+        <input type="text" id="sceneInput" placeholder="起き抜け" autocomplete="off">
+      </div></div>
+      <div class="step"><div class="num">2</div><div class="stepbody">
+        <h3>行動を小さくする<span>迷わず始められる大きさにします</span></h3>
+        <p>例：水を1杯 ／ ノートを1行 ／ 靴をはいて外に出る</p>
+        <input type="text" id="actionInput" placeholder="水を1杯" autocomplete="off">
+      </div></div>
+      <div class="step"><div class="num">3</div><div class="stepbody">
+        <h3>できたら記録に印をつける<span>できた事実を目に見える形に残します</span></h3>
+        <p>下の66日チェックで、できた日に印を付けてください。記録はこのブラウザの中だけに保存されます。登録は不要です。</p>
+      </div></div>
+    </section>
+
+    <section class="sec">
+      <div class="tracker-head">
+        <h2 style="margin:0">66日チェック</h2>
+        <label class="startctl">開始日<input type="date" id="startInput"></label>
+      </div>
+      <p class="summary" id="summary"></p>
+      <div class="bar" aria-hidden="true"><div id="barFill"></div></div>
+      <div class="grid" id="grid"></div>
+      <p class="note">1日抜けても、翌日に同じ場面へ戻れば大丈夫です。日数には18日から254日まで幅がありました。66日は目安として使ってください。<br>記録はこのブラウザの中だけに保存されるため、別のブラウザや端末では引き継がれません。</p>
+      <div class="actions no-print">
+        <button type="button" class="btn" id="printBtn">印刷する</button>
+        <button type="button" class="btn sub" id="resetBtn">記録を消して最初から</button>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div class="brand">成功脳の法則 ― The Success Brain</div>
+      <div class="url">全文はサイトで ― <a href="../#p08">第08編「習慣化の法則」</a><br><a href="../">https://alchea-lab.github.io/success-brain/</a></div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  "use strict";
+  var KEY = "sb-habit-tracker-v1";
+  var TOTAL = 66;
+  function pad(n){ return (n < 10 ? "0" : "") + n; }
+  function toISO(d){ return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate()); }
+  function parseISO(s){ var p = s.split("-"); return new Date(Number(p[0]), Number(p[1]) - 1, Number(p[2])); }
+  function addDays(d, n){ var x = new Date(d.getFullYear(), d.getMonth(), d.getDate()); x.setDate(x.getDate() + n); return x; }
+  function diffDays(a, b){ return Math.round((parseISO(b) - parseISO(a)) / 86400000); }
+  var todayStr = toISO(new Date());
+
+  function load(){
+    try {
+      var raw = localStorage.getItem(KEY);
+      if (!raw) return null;
+      var s = JSON.parse(raw);
+      if (!s || typeof s !== "object") return null;
+      return s;
+    } catch (e) { return null; }
+  }
+  function save(){
+    try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {}
+  }
+  var state = load() || { scene: "", action: "", start: todayStr, checks: {} };
+  if (!state.checks) state.checks = {};
+  if (!state.start) state.start = todayStr;
+
+  var sceneInput = document.getElementById("sceneInput");
+  var actionInput = document.getElementById("actionInput");
+  var startInput = document.getElementById("startInput");
+  var grid = document.getElementById("grid");
+  var summary = document.getElementById("summary");
+  var barFill = document.getElementById("barFill");
+
+  sceneInput.value = state.scene || "";
+  actionInput.value = state.action || "";
+  startInput.value = state.start;
+
+  sceneInput.addEventListener("input", function(){ state.scene = sceneInput.value; save(); });
+  actionInput.addEventListener("input", function(){ state.action = actionInput.value; save(); });
+  startInput.addEventListener("change", function(){
+    if (startInput.value) { state.start = startInput.value; save(); render(); }
+  });
+
+  function render(){
+    var start = parseISO(state.start);
+    var checkedCount = 0;
+    var cells = [];
+    for (var i = 0; i < TOTAL; i++){
+      var d = addDays(start, i);
+      var iso = toISO(d);
+      if (state.checks[iso]) checkedCount++;
+      cells.push({ n: i + 1, d: d, iso: iso });
+    }
+    grid.innerHTML = "";
+    cells.forEach(function(c){
+      var btn = document.createElement("button");
+      btn.type = "button";
+      var done = !!state.checks[c.iso];
+      var isToday = c.iso === todayStr;
+      var isFuture = c.iso > todayStr;
+      btn.className = "day" + (done ? " done" : "") + (isToday ? " today" : "") + (isFuture ? " future" : "");
+      btn.disabled = isFuture;
+      btn.setAttribute("aria-pressed", done ? "true" : "false");
+      btn.setAttribute("aria-label", (c.d.getMonth() + 1) + "月" + c.d.getDate() + "日 " + c.n + "日目" + (done ? " チェック済み" : ""));
+      var label = document.createElement("span");
+      label.className = "dlabel";
+      label.textContent = c.n + "日目";
+      var date = document.createElement("span");
+      date.className = "ddate";
+      date.textContent = (c.d.getMonth() + 1) + "/" + c.d.getDate();
+      var mark = document.createElement("span");
+      mark.className = "mark";
+      mark.textContent = done ? "✓" : "";
+      btn.appendChild(label);
+      btn.appendChild(date);
+      btn.appendChild(mark);
+      if (!isFuture){
+        (function(iso){
+          btn.addEventListener("click", function(){
+            if (state.checks[iso]) { delete state.checks[iso]; } else { state.checks[iso] = true; }
+            save();
+            render();
+          });
+        })(c.iso);
+      }
+      grid.appendChild(btn);
+    });
+
+    var dayNow = diffDays(state.start, todayStr) + 1;
+    var endStr = toISO(addDays(start, TOTAL - 1));
+    var endD = parseISO(endStr);
+    var period = "期間：" + (start.getMonth() + 1) + "月" + start.getDate() + "日 〜 " + (endD.getMonth() + 1) + "月" + endD.getDate() + "日";
+    var head;
+    if (dayNow < 1) {
+      head = "開始日は " + (start.getMonth() + 1) + "月" + start.getDate() + "日です。";
+    } else if (dayNow > TOTAL) {
+      head = "66日の期間が終わりました。";
+    } else {
+      head = "今日は <span class=\"now\">" + dayNow + "日目</span> です。";
+    }
+    var habit = "";
+    var sc = (state.scene || "").trim();
+    var ac = (state.action || "").trim();
+    if (sc || ac) habit = "　いまの設計：" + (sc ? "「" + sc + "」に " : "") + (ac ? "「" + ac + "」" : "");
+    summary.innerHTML = head + "<br>チェックは " + checkedCount + " 日分 ／ 66日（あと " + (TOTAL - checkedCount) + " 日分）<br>" +
+      "<span style=\"font-size:12.5px;color:var(--muted)\">" + period + habit + "</span>";
+    barFill.style.width = (checkedCount / TOTAL * 100) + "%";
+  }
+
+  document.getElementById("printBtn").addEventListener("click", function(){ window.print(); });
+  document.getElementById("resetBtn").addEventListener("click", function(){
+    if (window.confirm("記録をすべて消して、最初から始めますか。")) {
+      state = { scene: "", action: "", start: todayStr, checks: {} };
+      sceneInput.value = "";
+      actionInput.value = "";
+      startInput.value = state.start;
+      save();
+      render();
+    }
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
